@@ -4,12 +4,12 @@ var app = express();
 
 app.get('/', function(req, res) {
   console.log("test log")
-  res.send('root is called from testapp')
+  res.send('recent root is called from testapp')
 });
 
 app.get('/user', function (req, res) {
   console.log("test log")
-  res.send('Hello User! Version 3 -testapp');
+  res.send('changed Hello User! Version 3 -testapp');
 });
 
 app.get('/healthcheck', function (req, res) {
